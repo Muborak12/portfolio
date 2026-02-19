@@ -10,13 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
     <div class="container">
-      <header>
+      <header 
+      >
         <div class="container">
           <div class="container">
             <nav class="header-first-nav">
@@ -25,7 +26,7 @@
                 <h2 class="nav-name-part-second">Junior</h2>
               </div>
 
-              <div class="nav-wrapper">
+              <div class="nav-wrapper" >
                 <ul class="mini-wrapper">
                   <li class="link-first"></li>
                   <li class="link">
@@ -52,8 +53,18 @@
             </nav>
 
             <nav class="header-second-nav">
-              <div class="part-2-wrapper">
-                <div class="nav-card">
+              <div class="part-2-wrapper"
+              data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="1000"
+        data-aos-duraction="1000"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-mirror="true"
+        data-aos-once="falce"
+              >
+                <div class="nav-card"
+                
+                >
                   <h1 class="nav-h1">
                     Men haqimda qisqa <br />ma'lumotga <br />ega bo'ling!
                   </h1>
@@ -337,14 +348,13 @@
 
           <main class="first-main">
             <div class="main-wrapper">
-              <h3 class="main-h3">Subscribe</h3>
+              <h3 class="main-h3">Menga qo'shiling!</h3>
               <h2 class="main-h2">
-                Subscribe to get the latest <br />
-                News about us
+               Contact me to create your own<br />
+                creativ porfolio!
               </h2>
               <p class="main-p">
-                Please drop your email below to get daily update about what we
-                do
+                Kreativ Porfolio yaratish uchun menga qo'shiling!
               </p>
               <label for="" class="main-label">
                 <input class="input" type="text" class="enter-your-name" />
@@ -367,8 +377,8 @@
           <div class="footer-col">
             <h2 class="logo">WEB LOGO</h2>
             <p>
-              Some footer text about the Agency. Just a little description to
-              help people understand you better
+            Sizga qiziq bo'lgani degan ummidaman. Bu yerda loyiham 
+            sizga qo'l keldi degan umiddaman.
             </p>
             <div class="social">
               <a href="#"
@@ -393,12 +403,12 @@
           </div>
 
           <div class="footer-col">
-            <h3>Quick Links</h3>
+            <h3>Kerakli havolalar</h3>
             <ul>
-              <li><a href="#">Services</a></li>
+              <li><a href="#">Xizmatlar</a></li>
               <li><a href="#">Portfolio</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Biz haqimizda</a></li>
+              <li><a href="#">Bizga qo'shiling</a></li>
             </ul>
           </div>
 
@@ -418,4 +428,8 @@
 
   
   </body>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

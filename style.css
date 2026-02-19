@@ -759,3 +759,7 @@ body {
 .container-4 {
   margin: 0 auto;
 }
+.card-2:hover{
+  
+ transform: scale(1.1);
+}
