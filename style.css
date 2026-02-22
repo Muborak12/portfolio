@@ -633,7 +633,7 @@ h1 {
 .card-2 {
   background: white;
   border-radius: 15px;
-  padding: 20px;
+ 
   text-align: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
@@ -701,12 +701,7 @@ body {
   letter-spacing: 2px;
 }
 
-.member-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 35px;
-  margin-left: 100px;
-}
+
 .member-box {
   position: relative;
   height: 320px;
@@ -763,3 +758,147 @@ body {
   
  transform: scale(1.1);
 }
+
+.div{
+  display: flex;
+ 
+}
+.div2{
+  display: flex;
+
+ 
+}
+.member-box{
+  margin-top: 100px;
+  
+}
+.div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin-left: 100px;
+}
+.div2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin-left: 100px;
+}
+.member-box2{
+  position: relative;
+  height: 320px;
+  border-radius: 20px;
+  width: 400px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s ease;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.member-box2:hover {
+  transform: translateY(-18px) scale(1.05);
+}
+
+.member-box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: 0.6s;
+}
+
+.member-box2:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.15);
+}
+.my-photo{
+  width: 400px;
+  height: 550px;
+
+}
+.side-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+* {
+  transition: all 0.35s ease;
+}
+.nav-first-name:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+.link a {
+  position: relative;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #3bb77e, #22d3ee);
+  transition: 0.4s;
+}
+
+.link a:hover::after {
+  width: 100%;
+}
+.nav-card {
+  animation: slideLeft 1.2s ease forwards;
+}
+
+
+button:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+.my-photo {
+  transition: 0.6s;
+}
+
+.my-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(59,130,246,0.6);
+}
+.card-2 {
+  overflow: hidden;
+}
+
+
+
+.card-2:hover::after {
+  transform: translateX(100%);
+  transition: 0.6s;
+}
+.member-overlay {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+
+.footer-card {
+  perspective: 1000px;
+}
+
+.footer-card:hover {
+  transform: rotateY(8deg) rotateX(6deg) scale(1.05);
+}
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 25px rgba(34,211,238,0.8);
+}
+
+.main-button:hover {
+  background: linear-gradient(90deg, #f97316, #ef4444);
+}
+body {
+  animation: pageFade 1.2s ease;
+}
+
